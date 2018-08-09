@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
+import "./DrumRack.css";
+
 export default class DrumRack extends Component {
   constructor() {
     super();
@@ -36,6 +38,7 @@ export default class DrumRack extends Component {
 
 DrumRack.PropTypes = {
   className: PropTypes.string,
+  sound: PropTypes.string,
   keyCode: PropTypes.number.isRequired,
   keyLetter: PropTypes.string.isRequired,
   source: PropTypes.string.isRequired
