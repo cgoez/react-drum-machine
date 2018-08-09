@@ -26,7 +26,7 @@ export default class DrumRack extends Component {
     return (
       <div>
         <div keyCode={this.props.keyCode}>
-          <h1 className={this.props.className} />
+          <h1>{this.props.keyLetter}</h1>
           <audio src={this.props.source} />
         </div>
       </div>
