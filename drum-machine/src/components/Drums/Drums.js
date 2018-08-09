@@ -16,15 +16,15 @@ export default class Drums extends Component {
   render() {
     return (
       <div>
-        <DrumRack className="boom" keyCode={81} source={boom} />
-        <DrumRack className="clap" keyCode={87} source={clap} />
-        <DrumRack className="hihat" keyCode={69} source={hihat} />
-        <DrumRack className="kick" keyCode={65} source={kick} />
-        <DrumRack className="openhat" keyCode={83} source={openhat} />
-        <DrumRack className="ride" keyCode={68} source={ride} />
-        <DrumRack className="snare" keyCode={90} source={snare} />
-        <DrumRack className="tink" keyCode={88} source={tink} />
-        <DrumRack className="tom" keyCode={67} source={tom} />
+        <DrumRack className="boom" keyCode={81} keyLetter="q" source={boom} />
+        <DrumRack className="clap" keyCode={87} keyLetter="w" source={clap} />
+        <DrumRack className="hihat" keyCode={69} keyLetter="e" source={hihat} />
+        <DrumRack className="kick" keyCode={65} keyLetter="a" source={kick} />
+        <DrumRack className="openhat" keyCode={83} keyLetter="s" source={openhat} />
+        <DrumRack className="ride" keyCode={68} keyLetter="d" source={ride} />
+        <DrumRack className="snare" keyCode={90} keyLetter="z" source={snare} />
+        <DrumRack className="tink" keyCode={88} keyLetter="x" source={tink} />
+        <DrumRack className="tom" keyCode={67} keyLetter="c" source={tom} />
       </div>
     );
   }

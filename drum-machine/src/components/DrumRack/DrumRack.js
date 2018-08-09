@@ -37,5 +37,6 @@ export default class DrumRack extends Component {
 DrumRack.PropTypes = {
   className: PropTypes.string,
   keyCode: PropTypes.number.isRequired,
+  keyLetter: PropTypes.string.isRequired,
   source: PropTypes.string.isRequired
 };
