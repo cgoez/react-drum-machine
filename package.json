@@ -1,0 +1,8 @@
+{
+  "name": "react-drum-machine",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/cgoez/react-drum-machine.git",
+  "author": "cgoez <goez2001@gmail.com>",
+  "license": "MIT"
+}
