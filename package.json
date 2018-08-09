@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "https://github.com/cgoez/react-drum-machine.git",
   "author": "cgoez <goez2001@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "prop-types": "^15.6.2"
+  }
 }

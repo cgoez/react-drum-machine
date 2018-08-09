@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 export default class DrumRack extends Component {
   constructor() {
@@ -6,22 +7,35 @@ export default class DrumRack extends Component {
   }
 
   componentDidMount() {
-    document.addEventListener("keydown", this.handleKeydown);
+    document.addEventListener("keydown", this.playSound);
+    this.audio = new Audio(this.props.source);
   }
 
-  handleKeydown = event => {
+  componentWillUnmount() {
+    document.removeEventListener("keydown", this.playSound);
+  }
+
+  playSound = event => {
     if (event.keyCode === this.props.keyCode) {
-      this.playSound();
+      this.audio.play();
+      this.audio.currentTime = 0;
     }
   };
 
-  playSound = event => {
-    const audio = document.getElementById;
-  };
+  render() {
+    return (
+      <div>
+        <div keyCode={this.props.keyCode}>
+          <h1 className={this.props.className} />
+          <audio src={this.props.source} />
+        </div>
+      </div>
+    );
+  }
 }
 
-DrumKit.propTypes = {
-  className: propTypes.string,
-  keyCode: propTypes.number.isRequired,
-  source: propTypes.string.isRequired
+DrumRack.PropTypes = {
+  className: PropTypes.string,
+  keyCode: PropTypes.number.isRequired,
+  source: PropTypes.string.isRequired
 };
