@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class DrumKit extends Component {
+export default class DrumRack extends Component {
   constructor() {
     super();
   }
@@ -10,9 +10,7 @@ export default class DrumKit extends Component {
   }
 
   handleKeydown = event => {
-    if (event.keyCode === this.props.id) {
-      //   this.audio.play()
-      //   this.audio.currentTime = 0
+    if (event.keyCode === this.props.keyCode) {
       this.playSound();
     }
   };
