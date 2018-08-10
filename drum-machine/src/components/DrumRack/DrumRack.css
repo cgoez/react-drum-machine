@@ -1,16 +1,15 @@
 .drumrack {
-    display: flex;
-    height: 50%;
-    width: 50%;
-    margin: auto;
-    justify-content: center;
-  
-    border: 1px red solid;
-  }
-  
-  .drumpad {
-    border: 5px blue solid;
-    height: 150px;
-    width: 150px;
-  }
-  
+  border: 1px red solid;
+  background-color: grey;
+  display: flex;
+
+  margin: auto;
+  justify-content: center;
+}
+
+.drumpad {
+  border: 5px #FFB300 solid;
+  background-color: #333F48;
+  height: 150px;
+  width: 150px;
+}
