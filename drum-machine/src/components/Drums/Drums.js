@@ -18,7 +18,7 @@ export default class Drums extends Component {
   }
 
   playSound = event => {
-    if (event.keycode === this.props.keycode) {
+    if (event.keyCode === this.props.keyCode) {
       this.audio.play();
       this.audio.currentTime = 0;
       console.log(this.audio)
@@ -28,7 +28,7 @@ export default class Drums extends Component {
   render() {
     return (
       <div className="drumpad">
-        <div keycode={this.props.keycode}>
+        <div keyCode={this.props.keyCode}>
           <h1>{this.props.keyLetter}</h1>
           <audio src={this.props.source} />
         </div>
@@ -40,7 +40,7 @@ export default class Drums extends Component {
 Drums.PropTypes = {
   className: PropTypes.string,
   sound: PropTypes.string,
-  keycode: PropTypes.number.isRequired,
+  keyCode: PropTypes.number.isRequired,
   keyLetter: PropTypes.string.isRequired,
   source: PropTypes.string.isRequired
 };

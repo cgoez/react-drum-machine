@@ -18,77 +18,74 @@ export default class DrumRack extends Component {
   render() {
     return (
       <div className="drumrack">
-      <Drums
+        <div className="rowOne">
+          <Drums
             className="boom"
             sound="boom"
-            keycode={81}
+            keyCode={81}
             keyLetter="q"
             source={boom}
           />
           <Drums
             className="clap"
             sound="clap"
-            keycode={87}
+            keyCode={87}
             keyLetter="w"
             source={clap}
           />
           <Drums
             className="hihat"
             sound="hihat"
-            keycode={69}
+            keyCode={69}
             keyLetter="e"
             source={hihat}
           />
+        </div>
+        <div className="rowTwo">
           <Drums
             className="kick"
             sound="kick"
-            keycode={65}
+            keyCode={65}
             keyLetter="a"
             source={kick}
           />
           <Drums
             className="openhat"
             sound="openhat"
-            keycode={83}
+            keyCode={83}
             keyLetter="s"
             source={openhat}
           />
           <Drums
             className="drumpad ride"
             sound="ride"
-            keycode={68}
+            keyCode={68}
             keyLetter="d"
             source={ride}
           />
+        </div>
+        <div className="rowThree">
           <Drums
             className="drumpad snare"
             sound="snare"
-            keycode={90}
+            keyCode={90}
             keyLetter="z"
             source={snare}
           />
           <Drums
             className="drumpad tink"
             sound="tink"
-            keycode={88}
+            keyCode={88}
             keyLetter="x"
             source={tink}
           />
           <Drums
             className="drumpad tom"
             sound="tom"
-            keycode={67}
+            keyCode={67}
             keyLetter="c"
             source={tom}
           />
-        <div className="rowOne">
-          
-        </div>
-        <div className="rowTwo">
-          
-        </div>
-        <div className="rowThree">
-          
         </div>
       </div>
     );

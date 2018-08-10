@@ -2,14 +2,13 @@
   border: 1px red solid;
   background-color: grey;
   display: flex;
-
   margin: auto;
   justify-content: center;
 }
 
 .drumpad {
-  border: 5px #FFB300 solid;
-  background-color: #333F48;
+  border: 5px #ffb300 solid;
+  background-color: #333f48;
   height: 150px;
   width: 150px;
 }
