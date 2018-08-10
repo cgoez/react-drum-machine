@@ -21,7 +21,7 @@ export default class Drums extends Component {
     if (event.keyCode === this.props.keyCode) {
       this.audio.play();
       this.audio.currentTime = 0;
-      console.log(this.audio)
+      console.log(this.audio);
     }
   };
 
@@ -29,7 +29,8 @@ export default class Drums extends Component {
     return (
       <div className="drumpad">
         <div keyCode={this.props.keyCode}>
-          <h1>{this.props.keyLetter}</h1>
+          <h1 className="letter">{this.props.keyLetter}</h1>
+          <h3 className="sound">{this.props.sound}</h3>
           <audio src={this.props.source} />
         </div>
       </div>

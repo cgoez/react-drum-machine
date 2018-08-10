@@ -18,72 +18,68 @@ export default class DrumRack extends Component {
   render() {
     return (
       <div className="drumrack">
-        <div className="rowOne">
+        <div className="grid">
           <Drums
-            className="boom"
+            className="drumpad boom"
             sound="boom"
             keyCode={81}
-            keyLetter="q"
+            keyLetter="Q"
             source={boom}
           />
           <Drums
-            className="clap"
+            className="drumpad clap"
             sound="clap"
             keyCode={87}
-            keyLetter="w"
+            keyLetter="W"
             source={clap}
           />
           <Drums
-            className="hihat"
+            className="drumpad hihat"
             sound="hihat"
             keyCode={69}
-            keyLetter="e"
+            keyLetter="E"
             source={hihat}
           />
-        </div>
-        <div className="rowTwo">
           <Drums
-            className="kick"
+            className="drumpad kick"
             sound="kick"
             keyCode={65}
-            keyLetter="a"
+            keyLetter="A"
             source={kick}
           />
           <Drums
-            className="openhat"
+            className="drumpad openhat"
             sound="openhat"
             keyCode={83}
-            keyLetter="s"
+            keyLetter="S"
             source={openhat}
           />
           <Drums
             className="drumpad ride"
             sound="ride"
             keyCode={68}
-            keyLetter="d"
+            keyLetter="D"
             source={ride}
           />
-        </div>
-        <div className="rowThree">
           <Drums
             className="drumpad snare"
             sound="snare"
             keyCode={90}
-            keyLetter="z"
+            keyLetter="Z"
             source={snare}
           />
           <Drums
             className="drumpad tink"
             sound="tink"
             keyCode={88}
-            keyLetter="x"
+            keyLetter="X"
             source={tink}
           />
           <Drums
             className="drumpad tom"
             sound="tom"
             keyCode={67}
-            keyLetter="c"
+            keyLetter="C"
             source={tom}
           />
         </div>
