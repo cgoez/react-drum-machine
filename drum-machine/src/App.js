@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Drums from './components/Drums/Drums';
+import DrumRack from './components/DrumRack/DrumRack';
 
 class App extends Component {
   render() {
@@ -14,7 +14,7 @@ class App extends Component {
         <p className="App-intro">
           To get started, press some keys.
         </p>
-        <Drums />
+        <DrumRack />
       </div>
     );
   }

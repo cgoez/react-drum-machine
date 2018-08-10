@@ -1,4 +1,16 @@
-.drumRack:hover {
-    cursor: pointer;
-    background:rgba(0,0,0,0.3);
+.drumrack {
+    display: flex;
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+  
+    border: 1px red solid;
   }
+  
+  .drumpad {
+    border: 5px blue solid;
+    height: 150px;
+    width: 150px;
+  }
+  
